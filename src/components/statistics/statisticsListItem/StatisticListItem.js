@@ -1,18 +1,18 @@
 import React from "react";
-
-const randomColor = function () {
-  return `rgb(${Math.round(Math.random() * 255)},${Math.round(
-    Math.random() * 255
-  )},${Math.round(Math.random() * 255)} )`;
-};
+import PropTypes from "prop-types";
+import { randomColor } from "../../../helpers/helpers";
+import styles from "./statisticsListItem.module.css";
 
 export function StatisticsListItem({ label, percentage }) {
   return (
-    <li>
-      <span className="label" style={{ backgroundColor: randomColor() }}>
-        {label}
-      </span>
-      <span className="percentage">{percentage}%</span>
+    <li className={styles.item} style={{ backgroundColor: randomColor() }}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
 }
+
+StatisticsListItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};

@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.6);
+}
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.green {
+  composes: status;
+  background-color: green;
+}
+.red {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+}

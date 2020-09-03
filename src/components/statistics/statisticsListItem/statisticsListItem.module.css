@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  color: white;
+  padding: 8px;
+}
+.label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.percentage {
+  font-size: 18px;
+}

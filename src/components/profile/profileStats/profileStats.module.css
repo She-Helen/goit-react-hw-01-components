@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84px;
+}
+
+.quantity {
+  font-weight: 700;
+}
+.label {
+  color: #919aa6;
+  margin-bottom: 5px;
+}

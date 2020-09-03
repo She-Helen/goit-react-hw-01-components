@@ -1,0 +1,16 @@
+body {
+  background-color: #eff6ff;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+th {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+}
+
+thead th {
+  background-color: aqua;
+}
